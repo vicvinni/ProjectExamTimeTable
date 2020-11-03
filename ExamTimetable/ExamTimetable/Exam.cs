@@ -16,6 +16,6 @@ namespace ExamTimetableModel
         public string ExamRoom { get; set; }
         public string AdditionalInfo { get; set; }
 
-        public virtual ICollection<SubjectModules> SubjectModules { get; set; }
+          public virtual ICollection<SubjectModules> SubjectModules { get; set; }
     }
 }
