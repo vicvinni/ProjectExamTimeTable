@@ -1,0 +1,64 @@
+﻿<Window x:Class="ExamTimetableWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamTimetableWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="700"  WindowStartupLocation="CenterScreen">
+    
+    <Grid >
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFEFE1FF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        <Grid Margin="156,10,10,10" RenderTransformOrigin="0.5,0.495" >
+           
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="101*" />
+                <ColumnDefinition Width="101*" />
+                <ColumnDefinition Width="101*" />
+                <ColumnDefinition Width="101*" />
+                <ColumnDefinition Width="101*" />
+                <ColumnDefinition Width="101*" />
+                <ColumnDefinition Width="101*" />
+                <ColumnDefinition Width="101*" />
+                <ColumnDefinition Width="101*" />
+            </Grid.ColumnDefinitions>
+            <Border BorderThickness="4" BorderBrush="PaleGoldenrod" Grid.RowSpan="7" Grid.ColumnSpan="9" Margin="34,34,34,34"/>
+            <Button x:Name="BtnLoadProfile" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Content="Load Profile" Click="BtnLoadProfile_Click" />
+            <Button x:Name="BtnYr10Exam" Content="View Year 10 Exams"  Grid.Column="3" Grid.Row="1"  Grid.ColumnSpan="2" Grid.RowSpan="2" />
+            <Button x:Name="BtnYr11Exam" Content="View Year 11 Exams" Grid.Column="5" Grid.Row="1"  Grid.RowSpan="2" Grid.ColumnSpan="2" />
+            <Button x:Name="BtnYr12Exam" Content="View Year 12 Exams" Grid.Column="5" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="3" />
+            <Button x:Name="BtnCreateProfile" Content="Create Profile"  Grid.Row="3" Grid.RowSpan="3" Grid.Column="1" Grid.ColumnSpan="4" Click="BtnCreateProfile_Click" />
+            <Button x:Name="BtnExamCalander" Grid.Row="1" Grid.Column="7" Grid.RowSpan="5" Click="BtnExamCalander_Click" >
+                <TextBlock  TextWrapping="Wrap" Text="See All Exams"/>
+            </Button>
+
+        </Grid>
+        <StackPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Center" Margin="23,0,0,0">
+            <TextBlock Text="Good Luck! " TextWrapping="Wrap" Foreground="Brown" FontFamily="Freehand521 BT" FontSize="48" FontWeight="Bold" Width="133" />
+
+            <TextBlock Text="Plan and View all your Exams" TextWrapping="Wrap" Foreground="Brown" FontFamily="Times new roman" FontSize="24"  Width="133" />
+
+
+
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>

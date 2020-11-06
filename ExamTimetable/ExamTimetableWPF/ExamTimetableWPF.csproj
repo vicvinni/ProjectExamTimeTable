@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1.jpg" />
+    <None Remove="glassesonbooks.jpg" />
+    <None Remove="scheduleIcon.png" />
+    <None Remove="testIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExamTimetableBusiness\ExamTimetableBusiness.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1.jpg" />
+    <Resource Include="glassesonbooks.jpg" />
+    <Resource Include="scheduleIcon.png" />
+    <Resource Include="testIcon.png" />
+  </ItemGroup>
+
+</Project>
